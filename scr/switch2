@@ -1,0 +1,82 @@
+document.querySelector('#header').innerHTML = "esoty leyendo el documento switch"
+var diasDeLaSemana
+var mensaje
+var userInput = prompt("ingrese el numero del dia de la semana") 
+
+function hoy_es_lunes() {
+    document.querySelector('#header').innerHTML = mensaje
+  }
+
+  function hoy_es_martes() {
+    document.querySelector('#header').innerHTML = mensaje
+  }
+
+  function hoy_es_miércoles() {
+    document.querySelector('#header').innerHTML = mensaje
+  }
+
+  function hoy_es_jueves() {
+    document.querySelector('#header').innerHTML = mensaje
+  }
+
+  function hoy_es_viernes() {
+    document.querySelector('#header').innerHTML = mensaje
+  }
+
+  function hoy_es_sábado() {
+    document.querySelector('#header').innerHTML = mensaje
+  }
+
+  function hoy_es_domingo() {
+    document.querySelector('#header').innerHTML = mensaje
+  }
+
+  function dias_invalido() {
+    document.querySelector('#header').innerHTML = mensaje
+  }
+
+
+
+  diasDeLaSemana = parseInt(userInput)// con parseInt se convierte a entero
+switch (diasDeLaSemana) {
+    case 1:
+        mensaje = "lunes"
+        hoy_es_lunes()
+    break; 
+
+    case 2:
+        mensaje = "martes"
+        hoy_es_martes()
+    break;
+
+    case 3:
+        mensaje = "miércoles"
+        hoy_es_miércoles()
+    break;
+
+    case 4:
+        mensaje = "jueves"
+        hoy_es_jueves()
+    break; 
+
+    case 5:
+        mensaje = "viernes"
+        hoy_es_viernes()
+    break;
+
+
+    case 6:
+        mensaje = "sábado"
+        hoy_es_sábado()
+    break;
+
+    case 7:
+        mensaje = "domingo"
+        hoy_es_domingo ()
+    break; 
+
+    default:
+        mensaje = "día invalido"
+        dias_invalido()
+    break
+}
